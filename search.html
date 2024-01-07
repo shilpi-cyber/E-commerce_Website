@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script type='text/javascript' src="/bootstrap.js"></script>
+ <script type="text/javascript" src="/functions.js"></script>
+ <script>
+     //starts the carousel
+ $('#').carousel();
+</script>
+<title>E-Commerce</title>
+<style>
+  *{
+    scroll-behavior: smooth;
+  }
+.nav-item:hover{
+    background-color: rgb(203, 207, 248);
+    color: white;
+    border-radius: 12px;
+    
+}
+.nav-link:hover{
+  color:white;
+}
+.navbar-brand:hover{
+  
+  box-shadow: 0px 0px 2px 2px rgb(163, 217, 248);
+}
+.navbar-brand{
+  border: 2px solid black;
+  border-radius: 12px 12px 12px 12px;
+
+}
+.navbar1{
+  background-image: linear-gradient(to left,red,pink);
+}
+.cart:hover{
+    box-shadow: 0px 0px 2px 2px rgb(131, 192, 228);
+    transform: scale(1.2);}
+  #button{
+  width: 75px;
+  height:24px;
+  padding:14px;
+  margin-left: 34px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25%;
+}
+#button:hover{
+  transform: scale(1.1);
+  color: rgb(28, 241, 57);
+  background-color: black;
+  box-shadow: 0px 0px 5px 5px rgb(15, 150, 204);
+
+}
+
+
+</style>
+  </head>
+  <body>
+    
+    <section class="navbar1" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="join.html"><img src="images/logo1.jpg" alt="E" width="45px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            
+          </ul>
+         <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="dropdown.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>-->
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <a href="search.html" ><button class="btn btn-outline-success" type="submit">Search</button></a>
+          </form>
+        </div>
+      </div>
+      <div class="cart">
+      <a href="cart.html" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+      <span class="badge badge-pill badge-primary"></span>
+      </a>
+      </div>
+      </div>
+    </nav> 
+    </section>
+<!-- ==============search section ends here============== -->
+<section class="search_section py-5 my-5" id="search_section">
+  <div class="container">
+  <div class="title text-center mb-5">
+  <h2><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-file-earmark-check" viewBox="0 0 16 16">
+    <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+  </svg>Search</h2>
+  </div>
+  <div class="row">
+  <!-- BEGIN RESULT -->
+  <div class="col-md-10 mx-auto">
+  <!-- BEGIN SEARCH INPUT -->
+  <div class="input-group">
+  <input type="text" class="form-control" value="xyz">
+  <span class="input-group-btn">
+    <button class="btn btn-primary" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></button>
+      </span>
+      </div>
+      <!-- END SEARCH INPUT -->
+      <small>Showing all results matching "shoe"</small>
+      <!-- BEGIN TABLE RESULT -->
+      <div class="table-responsive mt-3">
+      <table class="table table-hover">
+      <tbody class="border-bottom">
+      <tr>
+      <td class="number text-center">1</td>
+      <td class="image"><img src="images/shoe4.jpg"
+      width="100px"
+      class="img img-fluid" alt=""></td>
+      <td class="product"><strong>White Shoes</strong><br>This is the
+        product description.
+        </td>
+        <td class="rate text-right"><span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+          </svg>
+        </span></td>
+        <td class="price text-right">₹699</td>
+        </tr>
+        <tr>
+        <td class="number text-center">2</td>
+        <td class="image"><img src="images/shoe6.jpg"
+        width="100px"
+        class="img img-fluid" alt=""></td>
+        <td class="product"><strong>Black Shoes</strong><br>This is the
+        product description.
+        </td>
+        <td class="rate text-right"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+        </svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+          <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+        </svg></span></td>
+          <td class="price text-right">₹399</td>
+          </tr>
+          <tr>
+          <td class="number text-center">3</td>
+          <td class="image"><img src="images/shoe7.jpg"
+          width="100px"
+          class="img img-fluid" alt=""></td>
+          <td class="product"><strong>Green Shoes</strong><br>This is the
+          product description.
+          </td>
+          <td class="rate text-right"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+          </svg></span></td>
+          <td class="price text-right">₹999</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+          <!-- END TABLE RESULT -->
+</div>
+<!-- END RESULT -->
+</div>
+</div>
+</section>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer_section pt-5 pb-2" id="footer_section">
+      <footer>
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-3 col-6 pl-5 pl-small-15">
+      <div class="footer_title">
+      <a href="logo.html"><img src="images/logo1.jpg" width="100px" height="100px" style="text-align: center;"
+      class="logo" alt="logo"></a>
+      </div>
+      <div>
+       <h4 style="font-style: italic;">E-SHOP</h4>
+      </div>
+      </div>
+      <div class="col-md-3 col-6">
+      <div class="footer_title pt-3 mb-3">
+      <h3>Quick Links</h3>
+      </div>
+      <div class="footer_links">
+      <ul>
+        <li><a href="about.html">About</a></li>
+<li><a href="javascript:;">Offers & Discounts</a></li>
+<li><a href="javascript:;">Get Coupon</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>New Products</h3>
+  </div>
+  <div class="footer_links">
+  <ul>
+  <li><a href="javascript:;">Woman Cloth</a></li>
+  <li><a href="javascript:;">Fashion Accessories</a></li>
+  <li><a href="javascript:;">Man Accessories</a></li>
+  <li><a href="javascript:;">Rubber made Toys</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>Support</h3>
+  </div>
+  <div class="footer_links">
+    <ul>
+      <li><a href="javascript:;">Frequently Asked Questions</a></li>
+      <li><a href="javascript:;">Terms & Conditions</a></li>
+      <li><a href="javascript:;">Privacy Policy</a></li>
+      <li><a href="javascript:;">Report a Payment Issue</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="border-top">
+      <h6 class="text-center mt-3">Copyright ©2020 All rights reserved<br> Presented by <strong>Shilpi Kaushik</strong>
+      </h6>
+      </div>
+      </footer>
+      </section>
+      <div class="backtop">
+        <a id="button" href="#top" class="btn btn-lg btn-outline-danger" src="images/arrow.png" role="button"><img src="images/arrow.png" width="32px" height="32px">
+        <i class="fas fa-chevron-up text-dark"></i>
+        </a>
+        </div>
+                                                               
+                                                                         
+  </body>
+</html>
+

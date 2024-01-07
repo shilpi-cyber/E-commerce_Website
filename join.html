@@ -1,0 +1,211 @@
+!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>E-commerce</title>
+  </head>
+  <body>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+    <style>
+  *{
+    scroll-behavior: smooth;
+  }
+.nav-item:hover{
+    background-color: rgb(203, 207, 248);
+    color: white;
+    border-radius: 12px;
+    text-transform: uppercase;
+    
+}
+.nav-link:hover{
+  color:white;
+}
+.navbar-brand:hover{
+  
+  box-shadow: 0px 0px 2px 2px rgb(163, 217, 248);
+}
+.navbar-brand{
+  border: 2px solid black;
+  border-radius: 12px 12px 12px 12px;
+
+}
+
+.cart:hover{
+    box-shadow: 0px 0px 2px 2px rgb(131, 192, 228);
+    transform: scale(1.2);
+}
+
+      body{
+        background-color:black;
+      }
+      .join{
+        width:65%;
+        font-size:1in;
+        font-weight:bolder;
+        background-color:black;
+        color:blue;
+        text-align:center;
+        margin:auto;
+        padding:12px;
+        animation-name: join;
+        animation-duration: 1s;
+   animation-iteration-count: 1;
+   /*animation-delay: 2s;*/
+   /*animation-direction: alternate;*/
+   animation-timing-function: ease-in;
+   /*animation-fill-mode: forwards;*/
+
+      }
+      .form{
+        background-color:cream;
+        border:2px solid blue;
+        border-radius:12px;
+        text-align:center;
+        margin: 20px auto 0 auto;
+        width:50%;
+        font-size:1rem;
+        overflow:hidden;
+        color:white;
+        align-items:center;
+        text-align:center;
+        justify-content:center;
+        padding:34px;
+      }
+      .details1,.details2,.details3,.details4,.details5,.details6{
+        padding:929px;
+        margin:2px;
+        font-size: small;
+        left: 145px;
+        right: 145px;
+
+        border-radius:13px;
+        box-sizing:120px 3px;
+      }
+      .form h5 .details1,.form h5 .details2,.form h5 .details3,.form h5 .details4,.form h5 .details5,.form h5 .details6{
+        padding:12px;
+        margin-left:259px;
+        
+      }
+      .button{
+        margin:32px;
+        padding:13px;
+        background-color:white;
+        border-radius:12px;
+        color:blue;
+        font-weight:bolder;
+
+      }
+      .button:hover{
+        transform:scale(1.5);
+        box-shadow:0 0px 2px 2px rgba(0, 178,178,23);
+        text-transform: uppercase;
+        
+
+      }
+      .lullu{
+        margin:23px;
+        padding:12px;
+      }
+     /* @keyframes join{
+  0%{ top:0px;}
+  25%{ top:3px;}
+  50%{ top:6px;}
+  75%{ top:9px;}
+  100%{ top:12px;}
+
+}*/
+    </style>
+  </head>
+  <body>
+    <section class="navbar1" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="join.html"><img src="images/logo1.jpg" alt="E" width="45px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html"><b>Products</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html"><b>Category</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><b>About US</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><b>Contact Us</b></a>
+              </li>
+
+            </ul>
+            <!-- <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="dropdown.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Dropdown</a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="#">Action</a></li>
+                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
+             </li>-->
+             <form class="d-flex">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+   
+               <a href="search.html" role="button" class="btn btn-outline-success" type="submit">Search</a>
+             </form>
+           </div>
+         </div>
+         <div class="cart">
+         <a href="cart.html" >
+           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+           </svg>
+         <span class="badge badge-pill badge-primary"></span>
+         </a>
+         </div>
+         </div>
+       </nav> 
+       </section>
+       <section class="joinus">
+    <h1 class="join">JOIN US </h1>
+    
+    <div class ="lullu">
+    <form class="form" >
+
+     <h5>NAME:<input type="text" placeholder="Write your name" class="details1"></h5>
+     <h5>DATE OF BIRTH:<input type="date" placeholder="DD/MM/YY"     class="details2"></h5>
+  
+     <h5>EMAIL ID:<input type="email" placeholder="abcd@gmail.com"    class="details4"></h5>
+     <h5>PASSWORD<input type="password" class="details5" ></h5>
+     <h5>PHONE NUMBER:<input type="tel" class="details6" ></h5>
+     <h4><button class="button">CREATE ACCOUNT</button></h4>
+
+  </form>
+     </div>
+     </section>
+  </body>
+</html>
